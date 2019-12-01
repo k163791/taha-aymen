@@ -9,6 +9,6 @@ class Match extends Model
     protected $fillable = ['team_id1', 'team_id2', 'date', 'time'];
 
     public function teams() {
-      $this->hasMany('App\Team');
+        return $this->belongsTo('App\Team');
     }
 }

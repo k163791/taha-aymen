@@ -28,4 +28,5 @@ Route::group(['middleware' => 'auth'], function() {
   Route::post('/admin/match/store', 'MatchesController@store')->name('match.store');
   Route::get('/teams', 'TeamsController@index')->name('teams');
   Route::get('/players', 'PlayersController@index')->name('players');
+  Route::get('/matches', 'MatchesController@index')->name('matches');
 });

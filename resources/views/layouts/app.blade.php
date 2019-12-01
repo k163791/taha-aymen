@@ -55,7 +55,7 @@
                               <a href="{{ route('players') }}" class="nav-link">Players</a>
                             </li>
                             <li class="nav-item">
-                              <a href="#" class="nav-link">Matches</a>
+                              <a href="{{ route('matches') }}" class="nav-link">Matches</a>
                             </li>
                             <li class="nav-item">
                               <a href="#" class="nav-link">My Bookings</a>

@@ -9,10 +9,10 @@ class Team extends Model
     protected $fillable = ['name', 'image'];
 
     public function players() {
-      $this->hasMany('App\Player');
+        return $this->hasMany('App\Player');
     }
 
     public function matches() {
-      $this->hasMany('App\Match');
+      return $this->hasOne('App\Match');
     }
 }

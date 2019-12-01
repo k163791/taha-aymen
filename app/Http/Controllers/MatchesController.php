@@ -15,7 +15,8 @@ class MatchesController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.matches.index')->with('matches', Match::paginate(20))
+        ->with('teams', Team::all());
     }
 
     /**
