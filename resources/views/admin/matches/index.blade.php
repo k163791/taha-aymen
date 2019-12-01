@@ -22,13 +22,9 @@
           <img src="{{$team2->image}}"  alt="..." height="200px">
           <div class="card-body">
             <h5 class="card-title">{{ $team1->name }} VS {{ $team2->name }}</h5>
-            <form class="" action="index.html" method="post">
-              @csrf
               <div class="text-center">
-                  <a href="#" class="btn btn-primary">Book</a>
+                  <a href="{{ route('match.book', ['id' => $match->id]) }}" class="btn btn-primary">Book</a>
               </div>
-
-            </form>
           </div>
           </div>
         @endforeach

@@ -58,7 +58,7 @@
                               <a href="{{ route('matches') }}" class="nav-link">Matches</a>
                             </li>
                             <li class="nav-item">
-                              <a href="#" class="nav-link">My Bookings</a>
+                              <a href="{{ route('bookings') }}" class="nav-link">My Bookings</a>
                             </li>
 
                           @endif
@@ -85,7 +85,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                                    <a href="#" class="dropdown-item">Profile</a>
+                                  
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

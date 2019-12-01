@@ -29,4 +29,7 @@ Route::group(['middleware' => 'auth'], function() {
   Route::get('/teams', 'TeamsController@index')->name('teams');
   Route::get('/players', 'PlayersController@index')->name('players');
   Route::get('/matches', 'MatchesController@index')->name('matches');
+  Route::get('/book/match/{id}', 'BookingsController@book')->name('match.book');
+  Route::post('/book/match/store', 'BookingsController@store')->name('book.store');
+  Route::get('/bookings', 'BookingsController@index')->name('bookings');
 });
