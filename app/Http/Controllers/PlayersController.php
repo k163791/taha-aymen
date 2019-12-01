@@ -15,7 +15,7 @@ class PlayersController extends Controller
      */
     public function index()
     {
-        return view('admin.player.index')->with('teams', Team::all());
+      return view('admin.player.index')->with('players', Player::paginate(20));
     }
 
     /**
@@ -57,7 +57,7 @@ class PlayersController extends Controller
         ]);
 
         Session::flash('success', 'Added Player Successfully');
-        return redirect()->route('admin');
+        return redirect()->back();
     }
 
     /**

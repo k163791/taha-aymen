@@ -9,6 +9,6 @@ class Player extends Model
     protected $fillable = ['name', 'image', 'team_id'];
 
     public function team() {
-      $this->belongsTo('App\Team');
+      return $this->belongsTo('App\Team');
     }
 }

@@ -3,16 +3,15 @@
 @section('content')
   <div class="card">
     <div class="card-header">
-      <h3>Players</h3>
+      <h3>Teams</h3>
     </div>
     <div class="card-body">
       <div class="card-deck">
-        @foreach($players as $player)
+        @foreach($teams as $team)
         <div class="card" style="width: 18rem;">
-          <img src="{{ $player->image }}" class="card-img-top" alt="..." height="300px">
+          <img src="{{ $team->image }}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">{{ $player->name }}</h5>
-            <p>{{ $player->team->name }}</p>
+            <h5 class="card-title">{{ $team->name }}</h5>
           </div>
           </div>
         @endforeach

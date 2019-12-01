@@ -26,5 +26,6 @@ Route::group(['middleware' => 'auth'], function() {
   Route::post('/admin/team/store', 'TeamsController@store')->name('team.store');
   Route::get('/admin/match/add', 'MatchesController@create')->name('match.add')->middleware('admin');
   Route::post('/admin/match/store', 'MatchesController@store')->name('match.store');
+  Route::get('/teams', 'TeamsController@index')->name('teams');
   Route::get('/players', 'PlayersController@index')->name('players');
 });

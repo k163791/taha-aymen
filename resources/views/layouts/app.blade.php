@@ -49,6 +49,9 @@
                             </li>
                           @else
                             <li class="nav-item">
+                              <a href="{{ route('teams') }}" class="nav-link">Teams</a>
+                            </li>
+                            <li class="nav-item">
                               <a href="{{ route('players') }}" class="nav-link">Players</a>
                             </li>
                             <li class="nav-item">
